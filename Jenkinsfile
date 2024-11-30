@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: "${env.GITHUB_REPO}"
+                git branch: 'master', url: "https://github.com/UsmanDevelop/RegistrationPage.git"
             }
         }
         stage('Build Docker Image and Run Container') {
